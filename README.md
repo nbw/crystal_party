@@ -1,10 +1,12 @@
 # crystal_party
 
+Barebones basic crystal web app.
+
 # Making a new app 
 
 The steps I followed to build this repo:
 
-1. Install Crystal
+**1.** **Install Crystal**
 
 On mac that's:
 
@@ -14,10 +16,11 @@ brew install crystal-lang
 ```
 
 
-2. New project
+**2.** **Create a new project**
+
 `crystal init app [Project name]`
 
-3. Add Kemal (a web framework) to your `shard.yml` file:
+**3.** **Add Kemal (a web framework) to your `shard.yml` file**:
 
 My shard file looks like:
 
@@ -43,9 +46,11 @@ dependencies:
 
 ```
 
-4. Install your dependancies with `crystal deps`
+**4.** **Install your dependancies** with `crystal deps`
 
-5. Replcae `src/[Project name].cr`:
+**5.** **Add a web endpoint and start Kemal**
+
+Replace `src/[Project name].cr`:
 
 ```
 require "kemal"
@@ -55,13 +60,13 @@ get "/" do
 end
 ```
 
-6. From the root directory of your project, you can run your project using:
+**6.** From the root directory of your project, you can **run your project using**:
 
 `crystal run src/[Project name].cr`
 
 Now visit `http://localhost:3000`
 
-7. What we really want is hot reloading. So install [sentry](https://github.com/samueleaton/sentry)
+**7.** What we really want is **hot reloading**. So install [sentry](https://github.com/samueleaton/sentry)
 
 The tl;dr is run:
 
