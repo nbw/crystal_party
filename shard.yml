@@ -1,0 +1,17 @@
+name: crystal_party
+version: 0.1.0
+
+authors:
+  - Nathan Willson <willson.b.nathan@gmail.com>
+
+targets:
+  crystal_party:
+    main: src/crystal_party.cr
+
+crystal: 0.24.1
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
